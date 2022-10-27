@@ -1,0 +1,68 @@
+:root  {
+    --primary: #bec6cc;
+    --white: #FFF;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--primary);
+}
+.cadastro-usuario{
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    height: 60%;
+    width: 50%;
+    min-width: 320px !important;
+    border-radius: 10px;
+    padding: 20px;
+}
+.linha{
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 1250px)
+{
+    .linha{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+input{ 
+    width: 300px;
+    border-radius: 10px;
+    background: rgb(238, 238, 238);
+}
+
+.margin-bottom{
+    margin-bottom: 10px;
+}
+.inputs-cadastro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+#mensagem_retorno_cadastro{
+    margin-left: 10px !important;
+}
+button{
+    width: 100px !important;
+    border-radius: 8px;
+    color: var(--white);
+    padding: 5px;
+    background: rgb(55, 55, 73);
+}
