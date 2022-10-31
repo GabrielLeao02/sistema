@@ -11,4 +11,6 @@ $r = mysqli_num_rows($resultado);
 
 if($r > 0){
     echo $r;
+}else{
+    echo "Erro ao efetuar login, verifique seus dados!";
 }
