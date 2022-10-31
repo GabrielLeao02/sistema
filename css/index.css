@@ -165,3 +165,19 @@ button {
 label{
     color: rgb(24 22 22 / 70%) !important;;
 }
+.body-dashboard{
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+}
+.app-bar{
+    background-color: #fff;
+    height: 120px;
+    width: 100%;
+    padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
