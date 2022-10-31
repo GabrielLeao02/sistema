@@ -13,28 +13,32 @@
 </head>
 
 <body>
-    <div class="logo-home">
-        teste
-    </div>
-    <div class="cadastro-usuario">
-        <h2>Login</h2>
-        <div class="linha">
-            <div class="margin-bottom inputs-cadastro">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
+    <div class="container-home">
+        <div class="logo-home">
+            
+        </div>
+        <div class="cadastro-usuario">
+            <div class="container-login">
+                <h2>Login</h2>
+                <div class="linha">
+                    <div class="margin-bottom inputs-cadastro">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="margin-bottom inputs-cadastro">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                </div>
+                <div class="linha">
+                    <button onclick="loginUsuario()">Acessar</button>
+                    <label id="mensagem_retorno_cadastro"></label>
+                </div>
             </div>
-        </div>
-        <div class="linha">
-            <div class="margin-bottom inputs-cadastro">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password">
-            </div>
-        </div>
-        <div class="linha">
-            <button onclick="loginUsuario()">Salvar</button>
-            <label id="mensagem_retorno_cadastro"></label>
-        </div>
 
+        </div>
     </div>
 </body>
 
