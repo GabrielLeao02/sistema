@@ -8,27 +8,66 @@ html{
 }
 body{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     margin: 0px;
     padding: 0px;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background: var(--primary);
+    background: #607d8b;
+}
+h2{
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .cadastro-usuario{
     display: flex;
     flex-direction: column;
     background: var(--white);
-    height: 60%;
-    width: 50%;
+    height: auto;
+    width: auto;
     min-width: 320px !important;
     border-radius: 10px;
     padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10rem;
 }
+.cadastro-usuario {
+	-webkit-animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
 .linha{
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -41,11 +80,11 @@ body{
     }
 }
 
-
 input{ 
     width: 300px;
     border-radius: 10px;
     background: rgb(238, 238, 238);
+    padding: 5px 10px 5px 10px;
 }
 
 .margin-bottom{
@@ -65,4 +104,14 @@ button{
     color: var(--white);
     padding: 5px;
     background: rgb(55, 55, 73);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.logo-home{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    background-image: url("../imagens/home.jpg");
+    background-size: cover;
+    border-radius: 0 0 50% 0;
 }
