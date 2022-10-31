@@ -24,6 +24,8 @@ function salvarCadastro() {
             $("#mensagem_retorno_cadastro").html(result).css({'color': 'green', 'margin-left': '10px' })
             setTimeout(function(){
                 $("#mensagem_retorno_cadastro").html('')
+                $(".cadastro-usuario").html('').css('background', 'transparent')
+                window.location.href = 'login/login.html';
               }, 3000);
         }
     });
