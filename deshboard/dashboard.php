@@ -11,7 +11,20 @@
 
 <body class="body-dashboard">
     <div class="app-bar">
+        <div class="container-perfil-left">
+            <div>
+                <a href="#">Inicio</a>
+                <a href="#">Alunos</a>
+                <a href="#">Meus Treinos</a>
+            </div>
+        </div>
         <h1>DeshBoard</h1>
+        <div class="container-perfil-right">
+            <div>
+                <a href="#">Configurações</a>
+                <a href="#">Perfil</a>
+            </div>
+        </div>
     </div>
 </body>
 

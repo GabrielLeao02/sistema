@@ -163,7 +163,7 @@ button {
     width: 80%;
 }
 label{
-    color: rgb(24 22 22 / 70%) !important;;
+    color: rgb(24 22 22 / 70%) !important;
 }
 .body-dashboard{
     display: flex !important;
@@ -180,4 +180,29 @@ label{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.container-perfil-right{
+    width: 25% !important;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    
+}
+.container-perfil-left{
+    width: 25% !important;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+}
+a{
+    text-decoration: none;
+    color: rgb(24 22 22 / 70%) !important;
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+a:hover{
+    background: #f4f6fa;
+    color: #3cb24a!important;
 }
