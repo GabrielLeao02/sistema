@@ -1,17 +1,14 @@
 function buscaPerfil() {
-    alert($("#id").val())
+    id = $("#id").val();
+    url = "/sistema/deshboard/perfil/busca_dados_perfil.php";
     $.ajax({
         type: "POST",
         url: url,
         data: {
-            nome: nome,
-            email: email,
-            login: login,
-            password: password
+            id: id
         },
-
         success: function (result) {
-           
+            console.log( JSON.parse(result)[1] )
         }
     });
 }
