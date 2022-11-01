@@ -29,8 +29,24 @@ require_once '../deshboard/perfil/busca_dados_perfil.php';
         <div class="container-perfil-right">
             <div>
                 <a href="#">Configurações</a>
-                <a href="#" onclick="buscaPerfil()">Perfil</a>
+                <a id="icon_perfil" href="#" onclick="openModalPerfil()">Perfil</a>
             </div>
+        </div>
+    </div>
+    <div id="modal-perfil-user" class="remove-modal-perfil-user">
+        <div class="container-picture-perfil">
+            <div class="picture-perfil">
+            </div>
+        </div>
+        <div class="container-picture-perfil-button">
+            <label id="label_imagem_perfil" for="imagem_perfil">Inserir Imagem</label>
+            <input name="imagem_perfil" id="imagem_perfil" type="file" />
+        </div>
+        <div class="container-informacoes-perfil">
+            Perfil: <?php echo $row["user_login"]; ?>
+        </div>
+        <div class="container-informacoes-perfil">
+            Nome: <?php echo $row["user_name"]; ?>
         </div>
     </div>
     <input id="id" type="hidden" value="<?php echo $_GET['id']; ?>">
