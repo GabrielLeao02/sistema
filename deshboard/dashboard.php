@@ -1,6 +1,6 @@
 <?php
-require_once '../backend/conexao.php';
-require_once '../deshboard/perfil/busca_dados_perfil.php';
+include '../backend/conexao.php';
+include '../deshboard/perfil/busca_dados_perfil.php';
 ?>
 <script type="text/javascript" src="../js/dashboard/deshboard.js"></script>
 <script src="../node_modules/jquery/dist/jquery.js"> </script>
@@ -43,13 +43,12 @@ require_once '../deshboard/perfil/busca_dados_perfil.php';
             <input name="imagem_perfil" id="imagem_perfil" type="file" />
         </div>
         <div class="container-informacoes-perfil">
-            Perfil: <?php echo $row["user_login"]; ?>
+            Perfil: <?= $perfil; ?>
         </div>
         <div class="container-informacoes-perfil">
-            Nome: <?php echo $row["user_name"]; ?>
+            Nome: <?= $name; ?>
         </div>
     </div>
-    <input id="id" type="hidden" value="<?php echo $_GET['id']; ?>">
 </body>
 
 </html>
