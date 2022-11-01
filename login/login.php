@@ -1,6 +1,6 @@
 <?php
 
-require_once '../backend/conexao.php';
+include '../backend/conexao.php';
 
 $email = $_POST['email'];
 $password = base64_encode($_POST['password']);

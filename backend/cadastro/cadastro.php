@@ -1,6 +1,6 @@
 <?php 
 
-require_once '../conexao.php';
+include '../conexao.php';
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $login = $_POST['login'];
