@@ -239,7 +239,8 @@ a:hover {
 .remove-modal-perfil-user {
     display: none !important;
 }
-.container-picture-perfil{
+
+.container-picture-perfil {
     width: 100%;
     height: 82px;
     display: flex;
@@ -248,23 +249,33 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.container-picture-perfil-button{
+
+.picture-perfil-none {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(24 22 22 / 70%) !important;
+    
+}
+
+.container-picture-perfil-button {
     width: 100%;
     height: fit-content;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     border-radius: 6px 6px 0 0;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.picture-perfil{
+
+.picture-perfil {
     width: 80px;
     height: 80px;
-    background: rgb(24 22 22 / 70%) !important;
     border-radius: 50%;
 }
 
-.container-informacoes-perfil{
+.container-informacoes-perfil {
     width: calc(100% - 20px);
     display: flex;
     justify-content: start;
@@ -273,13 +284,16 @@ a:hover {
     padding: 10px;
     border-radius: 8px;
 }
-.container-informacoes-perfil:hover{
+
+.container-informacoes-perfil:hover {
     background: #f4f6fa;
 }
-input[type="file"]{
+
+input[type="file"] {
     display: none;
 }
-#label_imagem_perfil{
+
+#label_imagem_perfil {
     text-decoration: none;
     background: #f4f6fa;
     color: #3cb24a !important;
@@ -289,4 +303,8 @@ input[type="file"]{
     font-size: 16px;
     border-radius: 10px;
     padding: 10px;
+}
+
+#salvar-imagem {
+    margin-top: 5px;
 }

@@ -1,9 +1,9 @@
+<script src="../node_modules/jquery/dist/jquery.js"> </script>
+<script type="text/javascript" src="/sistema/js/dashboard/deshboard.js"></script>
 <?php
 include '../backend/conexao.php';
 include '../deshboard/perfil/busca_dados_perfil.php';
 ?>
-<script type="text/javascript" src="../js/dashboard/deshboard.js"></script>
-<script src="../node_modules/jquery/dist/jquery.js"> </script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,14 +33,21 @@ include '../deshboard/perfil/busca_dados_perfil.php';
             </div>
         </div>
     </div>
+
     <div id="modal-perfil-user" class="remove-modal-perfil-user">
         <div class="container-picture-perfil">
-            <div class="picture-perfil">
-            </div>
+            <?php if (empty($row['user_picture']) || $row['user_picture'] == null) { ?>
+                <div class="picture-perfil-none"></div>
+            <?php } else { ?>
+                <img class="picture-perfil" src="../backend/deshboard/imagens/<?= $picture ?>" alt="<?= $picture ?>">
+            <?php } ?>
         </div>
+
         <div class="container-picture-perfil-button">
+            <input type="hidden" name="id" id="id" value="<?= $id ?>">
             <label id="label_imagem_perfil" for="imagem_perfil">Inserir Imagem</label>
-            <input name="imagem_perfil" id="imagem_perfil" type="file" />
+            <input type="file" name="upload" id="imagem_perfil" />
+
         </div>
         <div class="container-informacoes-perfil">
             Perfil: <?= $perfil; ?>
@@ -52,3 +59,23 @@ include '../deshboard/perfil/busca_dados_perfil.php';
 </body>
 
 </html>
+<script>
+    $("#imagem_perfil").on("change", function(e) {
+        // alert('ok')
+        var arquivo = e.target.files[0];
+        var formdata = new FormData();
+        var id = $("#id").val();
+        formdata.append("id", id);
+        formdata.append("file", arquivo);
+        $.ajax({
+            type: "POST",
+            url: "/sistema/backend/deshboard/salva_imagem_user.php",
+            data: formdata,
+            contentType: false,
+            processData: false,
+            success: function(result) {
+                $(".container-picture-perfil").html(`<img class=\"picture-perfil\" src='../backend/deshboard/${result}' alt=''>`)
+            }
+        });
+    })
+</script>

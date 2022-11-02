@@ -6,3 +6,4 @@ $row = mysqli_fetch_array($resultado);
 
 $perfil = $row["user_login"];
 $name = $row["user_name"];
+$picture = $row["user_picture"];
