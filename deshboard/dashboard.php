@@ -55,6 +55,7 @@ include '../deshboard/perfil/busca_dados_perfil.php';
         <div class="container-informacoes-perfil">
             Nome: <?= $name; ?>
         </div>
+        
     </div>
 </body>
 
