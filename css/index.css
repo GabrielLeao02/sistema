@@ -308,3 +308,18 @@ input[type="file"] {
 #salvar-imagem {
     margin-top: 5px;
 }
+@media only screen and (max-width: 480px) {
+    .container-perfil-left {
+      display: none;
+    }
+    .container-perfil-right{
+        display: none;
+    }
+    .cadastro-usuario{
+        width: 100% !important;
+        padding: 10pxs;
+    }
+    .logo-home{
+        display: none;
+    }
+  }
