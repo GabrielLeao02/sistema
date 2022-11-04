@@ -63,7 +63,6 @@ include '../deshboard/perfil/busca_dados_perfil.php';
 </html>
 <script>
     $("#imagem_perfil").on("change", function(e) {
-        // alert('ok')
         var arquivo = e.target.files[0];
         var formdata = new FormData();
         var id = $("#id").val();
