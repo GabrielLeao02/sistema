@@ -45,6 +45,7 @@
                 count++;
                 $("#nome" + count).css("display", "block")
             } while (count <= count_delete);
+            
         }
     }
 </script>

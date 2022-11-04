@@ -36,6 +36,10 @@
                 count++;
                 $("#nome" + count).css("display", "none")
             } while (count <= count_delete);
+            do {
+                count--;
+                $("#nome" + count).css("display", "block")
+            } while (count >= 0);
         } else {
             $("#email" + count).removeClass("linha-user-email-block");
             $("#email" + count).addClass("linha-user-email");
@@ -45,6 +49,10 @@
                 count++;
                 $("#nome" + count).css("display", "block")
             } while (count <= count_delete);
+            do {
+                count--;
+                $("#nome" + count).css("display", "block")
+            } while (count >= 0);
         }
     }
 </script>

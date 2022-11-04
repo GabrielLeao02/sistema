@@ -25,7 +25,7 @@ include '../deshboard/perfil/busca_dados_perfil.php';
                 <a href="#">Meus Treinos</a>
             </div>
         </div>
-        <h1>DashBoard</h1>
+        <h1>DeshBoard</h1>
         <div class="container-perfil-right">
             <div>
                 <a href="#">Configurações</a>

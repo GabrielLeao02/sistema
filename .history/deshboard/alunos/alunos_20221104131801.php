@@ -16,7 +16,7 @@
     </div>
     <?php while ($row_linhas = mysqli_fetch_array($resultado)) { ?>
 
-        <div id="nome<?= $count; ?>" class="user" onclick="teste('<?= $count; ?>')">Nome: <?= $row_linhas["user_name"] ?></div>
+        <div  id="nome<?= $count; ?>" class="user" onclick="teste('<?= $count; ?>')">Nome: <?= $row_linhas["user_name"] ?></div>
         <div id="email<?= $count; ?>" class="linha-user-email">Email: <?= $row_linhas["user_email"] ?></div>
 
         <?php $count++; ?>
@@ -26,25 +26,18 @@
 </html>
 <script>
     function teste(count) {
-        count_delete = '<?php echo $count; ?>';
         if ($("#email" + count).hasClass("linha-user-email")) {
             $("#email" + count).removeClass("linha-user-email");
             $("#email" + count).addClass("linha-user-email-block");
             $("#nome" + count).remove("user");
             $("#nome" + count).addClass("user-selected");
-            do {
-                count++;
-                $("#nome" + count).css("display", "none")
-            } while (count <= count_delete);
         } else {
             $("#email" + count).removeClass("linha-user-email-block");
             $("#email" + count).addClass("linha-user-email");
             $("#nome" + count).addClass("user")
             $("#nome" + count).removeClass("user-selected")
-            do {
-                count++;
-                $("#nome" + count).css("display", "block")
-            } while (count <= count_delete);
         }
+
+
     }
 </script>
