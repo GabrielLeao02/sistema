@@ -360,24 +360,17 @@ input[type="file"] {
 
 .user {
     z-index: 1;
-    background: #8cb291;
+    background: transparent;
     padding: 15px;
+    border-radius: 8px;
     width: 40%;
     margin: 10px;
     cursor: pointer;
-    display: flex !important;
-    justify-content: space-between;
-    color: #FFF !important;
-    margin-top: -9px;
 }
 
 .user:hover {
     background: #f4f6fa;
     color: #3cb24a !important;
-}
-
-.user:hover > .material-symbols-outlined-icon{
-    color: #8cb291;
 }
 
 .user-selected {
@@ -403,10 +396,4 @@ input[type="file"] {
     width: 100%;
     justify-content: start;
     margin-left: 1%;
-}
-.material-symbols-outlined-icon{
-    color: #fff;
-}
-.material-symbols-outlined-icon:hover{
-    color: #8cb291;
 }

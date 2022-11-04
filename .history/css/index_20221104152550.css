@@ -362,10 +362,11 @@ input[type="file"] {
     z-index: 1;
     background: #8cb291;
     padding: 15px;
+    border-radius: 8px;
     width: 40%;
     margin: 10px;
     cursor: pointer;
-    display: flex !important;
+    display: flex;
     justify-content: space-between;
     color: #FFF !important;
     margin-top: -9px;
@@ -374,10 +375,6 @@ input[type="file"] {
 .user:hover {
     background: #f4f6fa;
     color: #3cb24a !important;
-}
-
-.user:hover > .material-symbols-outlined-icon{
-    color: #8cb291;
 }
 
 .user-selected {
@@ -405,8 +402,5 @@ input[type="file"] {
     margin-left: 1%;
 }
 .material-symbols-outlined-icon{
-    color: #fff;
-}
-.material-symbols-outlined-icon:hover{
-    color: #8cb291;
+    color: #8cb291 !important;;
 }

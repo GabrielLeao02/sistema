@@ -17,8 +17,8 @@
     </div>
     <?php while ($row_linhas = mysqli_fetch_array($resultado)) { ?>
 
-        <div id="nome<?= $count; ?>" class="user"  onclick="teste('<?= $count; ?>')">Nome: <?= $row_linhas["user_name"] ?>
-            <span class="material-symbols-outlined material-symbols-outlined-icon">
+        <div id="nome<?= $count; ?>" class="user" onclick="teste('<?= $count; ?>')">Nome: <?= $row_linhas["user_name"] ?>
+            <span class="material-symbols-outlined">
                 expand_more
             </span>
         </div>
@@ -52,5 +52,4 @@
             } while (count <= count_delete);
         }
     }
-
 </script>

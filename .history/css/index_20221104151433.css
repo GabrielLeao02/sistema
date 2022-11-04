@@ -20,10 +20,6 @@ body {
     background: #f4f6fa;
 }
 
-h1{
-    color: #FFF;
-}
-
 h2 {
     margin-left: 10px;
     line-height: 1.5;
@@ -182,7 +178,7 @@ label {
 }
 
 .app-bar {
-    background: #8cb291 !important;
+    background-color: #fff;
     height: 120px;
     width: 100%;
     padding: 12px 0px;
@@ -209,7 +205,7 @@ label {
 
 a {
     text-decoration: none;
-    color: #FFF;
+    color: rgb(24 22 22 / 70%) !important;
     margin-left: 10px;
     font-size: 20px;
     border-radius: 10px;
@@ -337,8 +333,6 @@ input[type="file"] {
 }
 
 .linha-user-email-block {
-    color: #FFF;
-    background: #8cb291 !important;
     display: block;
     padding: 15px;
     border-radius: 8px;
@@ -360,24 +354,17 @@ input[type="file"] {
 
 .user {
     z-index: 1;
-    background: #8cb291;
+    background: transparent;
     padding: 15px;
+    border-radius: 8px;
     width: 40%;
     margin: 10px;
     cursor: pointer;
-    display: flex !important;
-    justify-content: space-between;
-    color: #FFF !important;
-    margin-top: -9px;
 }
 
 .user:hover {
     background: #f4f6fa;
     color: #3cb24a !important;
-}
-
-.user:hover > .material-symbols-outlined-icon{
-    color: #8cb291;
 }
 
 .user-selected {
@@ -403,10 +390,4 @@ input[type="file"] {
     width: 100%;
     justify-content: start;
     margin-left: 1%;
-}
-.material-symbols-outlined-icon{
-    color: #fff;
-}
-.material-symbols-outlined-icon:hover{
-    color: #8cb291;
 }
