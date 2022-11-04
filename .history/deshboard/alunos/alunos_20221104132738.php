@@ -42,9 +42,12 @@
             $("#nome" + count).addClass("user")
             $("#nome" + count).removeClass("user-selected")
             do {
-                count++;
-                $("#nome" + count).css("display", "block")
-            } while (count <= count_delete);
+            count++;
+            $("#nome" + count).css("display", "block")
+        } while (count <= count_delete);
         }
+       
+
+
     }
 </script>

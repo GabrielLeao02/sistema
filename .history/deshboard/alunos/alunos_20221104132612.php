@@ -32,19 +32,17 @@
             $("#email" + count).addClass("linha-user-email-block");
             $("#nome" + count).remove("user");
             $("#nome" + count).addClass("user-selected");
-            do {
-                count++;
-                $("#nome" + count).css("display", "none")
-            } while (count <= count_delete);
         } else {
             $("#email" + count).removeClass("linha-user-email-block");
             $("#email" + count).addClass("linha-user-email");
             $("#nome" + count).addClass("user")
             $("#nome" + count).removeClass("user-selected")
-            do {
-                count++;
-                $("#nome" + count).css("display", "block")
-            } while (count <= count_delete);
         }
+        do {
+            count++;
+            $("#nome" + count).html("")
+        } while (count <= count_delete);
+
+
     }
 </script>
