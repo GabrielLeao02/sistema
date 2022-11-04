@@ -12,6 +12,7 @@ $query = "UPDATE `user` SET `user_picture` = '{$name}' WHERE `user`.`user_id` = 
 $resultado = mysqli_query($conn, $query);
  
 if($ok){
+   
     echo "imagens/$name";
 }else{
     echo "erro";

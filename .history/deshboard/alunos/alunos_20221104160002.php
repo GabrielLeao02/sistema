@@ -53,4 +53,7 @@
         }
     }
 
+    function setaCssICon() {
+        $(".material-symbols-outlined-icon").css("color", "#8cb291")
+    }
 </script>

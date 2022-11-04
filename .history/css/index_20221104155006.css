@@ -376,10 +376,6 @@ input[type="file"] {
     color: #3cb24a !important;
 }
 
-.user:hover > .material-symbols-outlined-icon{
-    color: #8cb291;
-}
-
 .user-selected {
     z-index: 1;
     background: transparent;
