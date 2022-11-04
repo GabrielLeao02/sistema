@@ -21,7 +21,7 @@ include '../deshboard/perfil/busca_dados_perfil.php';
         <div class="container-perfil-left">
             <div>
                 <a href="#">Inicio</a>
-                <a href="#">Alunos</a>
+                <a onclick="buscaAlunos()" href="#">Alunos</a>
                 <a href="#">Meus Treinos</a>
             </div>
         </div>
@@ -57,6 +57,7 @@ include '../deshboard/perfil/busca_dados_perfil.php';
         </div>
         
     </div>
+    <div id="retorno_alunos" class="container-alunos"></div>
 </body>
 
 </html>
@@ -79,4 +80,14 @@ include '../deshboard/perfil/busca_dados_perfil.php';
             }
         });
     })
+    function buscaAlunos(){
+        $.ajax({
+            type: "POST",
+            url: "/sistema/deshboard/alunos/alunos.php",
+            success: function(result) {
+                $("#retorno_alunos").html(result)
+            }
+        });
+    }
+
 </script>

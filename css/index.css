@@ -255,7 +255,7 @@ a:hover {
     height: 80px;
     border-radius: 50%;
     background: rgb(24 22 22 / 70%) !important;
-    
+
 }
 
 .container-picture-perfil-button {
@@ -307,4 +307,69 @@ input[type="file"] {
 
 #salvar-imagem {
     margin-top: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    .container-perfil-left {
+        display: none;
+    }
+
+    .container-perfil-right {
+        display: none;
+    }
+
+    .cadastro-usuario {
+        width: 100% !important;
+        padding: 10pxs;
+    }
+
+    .logo-home {
+        display: none;
+    }
+}
+
+.linha-user-email {
+    display: none !important;
+}
+
+.linha-user-email-block {
+    display: block;
+    padding: 15px;
+    border-radius: 8px;
+    width: 40%;
+}
+
+.container-alunos {
+    background: #fff;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10PX;
+    border-radius: 8px;
+}
+
+.user {
+    z-index: 1;
+    background: transparent;
+    padding: 15px;
+    border-radius: 8px;
+    width: 40%;
+    margin: 10px;
+    cursor: pointer;
+}
+.user:hover{
+    background: #f4f6fa;
+    color: #3cb24a !important;
+}
+
+
+.user:hover {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+.title-lista-alunos{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    margin-left: 14%;
 }
