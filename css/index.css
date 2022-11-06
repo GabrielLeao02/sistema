@@ -20,7 +20,7 @@ body {
     background: #f4f6fa;
 }
 
-h1{
+h1 {
     color: #FFF;
 }
 
@@ -337,14 +337,16 @@ input[type="file"] {
 }
 
 .linha-user-email-block {
-    color: #FFF;
-    background: #8cb291 !important;
+    border-radius: 0 0 8px 8px !important;
+    box-shadow: 0 3px 7px rgb(0 0 0 / 30%);
+    margin-top: -7px !important;
+    color: #8cb291 !important;
+    background: #f4f6fa;
     display: block;
     padding: 15px;
-    border-radius: 8px;
-    width: 40%;
-    border-bottom: 1px solid green;
+    width: 60%;
     margin: 10px;
+    z-index: 1;
 }
 
 .container-alunos {
@@ -362,10 +364,10 @@ input[type="file"] {
     z-index: 1;
     background: #8cb291;
     padding: 15px;
-    width: 40%;
+    width: 60%;
     margin: 10px;
-    cursor: pointer;
-    display: flex !important;
+    border-radius: 8px;
+    display: flex;
     justify-content: space-between;
     color: #FFF !important;
     margin-top: -9px;
@@ -373,10 +375,11 @@ input[type="file"] {
 
 .user:hover {
     background: #f4f6fa;
-    color: #3cb24a !important;
+    color: #8cb291 !important;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 
-.user:hover > .material-symbols-outlined-icon{
+.user:hover>.material-symbols-outlined-icon {
     color: #8cb291;
 }
 
@@ -385,16 +388,21 @@ input[type="file"] {
     background: transparent;
     padding: 15px;
     border-radius: 8px;
-    width: 40%;
+    width: 60%;
     margin: 10px;
-    cursor: pointer;
-    background: #f4f6fa;
-    color: #3cb24a !important;
+    background: #8cb291 !important;
+    color: #FFF !important;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    margin-top: -9px;
 }
 
+.user-selected:hover>.material-symbols-outlined-icon {
+    color: #FFF;
+}
 
-.user:hover {
+.user-selected:hover {
+    background: #f4f6fa;
+    color: #FFF !important;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 
@@ -404,9 +412,35 @@ input[type="file"] {
     justify-content: start;
     margin-left: 1%;
 }
-.material-symbols-outlined-icon{
+
+.material-symbols-outlined-icon {
+    display: flex;
     color: #fff;
+    align-items: center;
 }
-.material-symbols-outlined-icon:hover{
+
+.material-symbols-outlined-icon:hover {
     color: #8cb291;
+}
+
+#add-treino {
+    height: 30px;
+    background: #f4f6fa !important;
+    color: #3cb24a !important;
+    margin-left: 10px !important;
+    font-size: 16px !important;
+    border-radius: 5px !important;
+    padding: 0px 2px 0px 2px !important;
+}
+
+#expand_more {
+    cursor: pointer !important;
+}
+
+.container-adicionar-alunos {
+    width: 100%;
+    display: flex;
+}
+.subcontainer-adicionar-alunos{
+    width: 50%;
 }
