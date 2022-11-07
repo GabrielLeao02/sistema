@@ -444,3 +444,6 @@ input[type="file"] {
 .subcontainer-adicionar-alunos{
     width: 50%;
 }
+#add{
+    cursor: pointer !important;
+}

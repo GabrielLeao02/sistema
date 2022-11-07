@@ -21,7 +21,7 @@
             <div class="subcontainer-adicionar-alunos">
                 <div id="nome<?= $count; ?>" class="user">Nome: <?= $row_linhas["user_name"] ?>
                     <div class="material-symbols-outlined-icon">
-                        <span class="material-symbols-outlined" title="Adicionar treino" onclick="adicionarTreino()">
+                        <span id="add" class="material-symbols-outlined" title="Adicionar treino" onclick="adicionarTreino()">
                             add
                         </span>
                         <span id="expand_more" class="material-symbols-outlined" onclick="teste('<?= $count; ?>')">
@@ -30,6 +30,7 @@
                     </div>
                 </div>
                 <div id="email<?= $count; ?>" class="linha-user-email">Email: <?= $row_linhas["user_email"] ?> </div>
+                <div id="email<?= $count; ?>" class="linha-user-email">Email: <?= $row_linhas["user_login"] ?> </div>
             </div>
             <div id="container-treinos">
 
@@ -72,6 +73,11 @@
     }
 
     function adicionarTreino() {
-
+        $("#container-treinos").css({
+            "background": "#8cb291",
+            "width": "calc(50% - 20px)",
+            "border-radius": "5px",
+            "margin-right": "20px"
+        })
     }
 </script>
