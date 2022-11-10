@@ -1,8 +1,8 @@
-<script src="../node_modules/jquery/dist/jquery.js"> </script>
-<script type="text/javascript" src="/sistema/js/dashboard/deshboard.js"></script>
+<script src="../../node_modules/jquery/dist/jquery.js"> </script>
+<script type="text/javascript" src="../../js/dashboard/deshboard.js"></script>
 <?php
-include '../backend/conexao.php';
-include '../deshboard/perfil/busca_dados_perfil.php';
+include '../../backend/conexao.php';
+include '../../backend/perfil/busca_dados_perfil.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@ include '../deshboard/perfil/busca_dados_perfil.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../../css/index.css">
 
     <title>Document</title>
 </head>
@@ -39,7 +39,7 @@ include '../deshboard/perfil/busca_dados_perfil.php';
             <?php if (empty($row['user_picture']) || $row['user_picture'] == null) { ?>
                 <div class="picture-perfil-none"></div>
             <?php } else { ?>
-                <img class="picture-perfil" src="../backend/deshboard/imagens/<?= $picture ?>" alt="<?= $picture ?>">
+                <img class="picture-perfil" src="/sistema/imagens/<?= $picture ?>" alt="<?= $picture ?>">
             <?php } ?>
         </div>
 
@@ -70,19 +70,19 @@ include '../deshboard/perfil/busca_dados_perfil.php';
         formdata.append("file", arquivo);
         $.ajax({
             type: "POST",
-            url: "/sistema/backend/deshboard/salva_imagem_user.php",
+            url: "/sistema/backend/perfil/salva_imagem_user.php",
             data: formdata,
             contentType: false,
             processData: false,
             success: function(result) {
-                $(".container-picture-perfil").html(`<img class=\"picture-perfil\" src='../backend/deshboard/${result}' alt=''>`)
+                $(".container-picture-perfil").html(`<img class=\"picture-perfil\" src='${result}' alt=''>`)
             }
         });
     })
     function buscaAlunos(){
         $.ajax({
             type: "POST",
-            url: "/sistema/deshboard/alunos/alunos.php",
+            url: "/sistema/pages/alunos/alunos.php",
             success: function(result) {
                 $("#retorno_alunos").html(result)
             }
