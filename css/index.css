@@ -81,7 +81,7 @@ h2 {
 
 .linha {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 }
 
@@ -446,4 +446,8 @@ input[type="file"] {
 }
 #add{
     cursor: pointer !important;
+}
+
+.container-sub-cadastro-usuario{
+    width: 100% !important;
 }
