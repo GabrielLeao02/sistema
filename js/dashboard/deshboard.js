@@ -14,6 +14,7 @@ function buscaPerfil() {
 }
 
 function openModalPerfil(){
+    alert("teste")
     if($("#modal-perfil-user").hasClass("modal-perfil-user")){
         $("#modal-perfil-user").removeClass("modal-perfil-user")
         $("#modal-perfil-user").addClass( "remove-modal-perfil-user" )

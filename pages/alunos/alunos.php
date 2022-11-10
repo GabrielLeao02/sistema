@@ -1,4 +1,4 @@
-<?php include "./busca_alunos.php"; ?>
+<?php include "../../backend/alunos/busca_alunos.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
